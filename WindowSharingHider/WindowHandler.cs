@@ -45,12 +45,14 @@ namespace WindowSharingHider
             {
                 if (!IsWindowVisible(hWnd)) return true;
                 DwmGetWindowAttribute(hWnd, 14, out Int32 pvAttribute, 4);
-                if (pvAttribute == 2) return true;
+                if (pvAttribute > 0) return true;
                 var length = GetWindowTextLength(hWnd);
                 if (length == 0) return true;
                 var windowTextBuilder = new StringBuilder(length + 1);
                 GetWindowText(hWnd, windowTextBuilder, windowTextBuilder.Capacity);
-                windows[hWnd] = windowTextBuilder.ToString();
+                var windowTitle = windowTextBuilder.ToString();
+                if (windowTitle == "Program Manager") windowTitle = "Desktop and Icons";
+                windows[hWnd] = windowTitle;
                 return true;
             }, IntPtr.Zero);
             return windows;
