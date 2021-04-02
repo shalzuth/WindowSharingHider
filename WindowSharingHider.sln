@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowSharingHider", "WindowSharingHider.csproj", "{A22A1935-CADD-4509-9B5A-CBD9C1F1AB96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowSharingHider", "WindowSharingHider\WindowSharingHider.csproj", "{A22A1935-CADD-4509-9B5A-CBD9C1F1AB96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
