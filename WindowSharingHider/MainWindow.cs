@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
@@ -29,7 +28,7 @@ namespace WindowSharingHider
         Boolean flagToPreserveSettings = false;
         private void Timer_Tick(object sender, EventArgs e)
         {
-            foreach(WindowInfo window in windowListCheckBox.Items) window.stillExists = false;
+            foreach (WindowInfo window in windowListCheckBox.Items) window.stillExists = false;
             var currWindows = WindowHandler.GetVisibleWindows();
             foreach (var window in currWindows)
             {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowSharingHider", "WindowSharingHider\WindowSharingHider.csproj", "{A22A1935-CADD-4509-9B5A-CBD9C1F1AB96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowSharingHider", "WindowSharingHider\WindowSharingHider.csproj", "{9A4DE5B4-64FC-4B26-B1F6-A07904AC33F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A22A1935-CADD-4509-9B5A-CBD9C1F1AB96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A22A1935-CADD-4509-9B5A-CBD9C1F1AB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A22A1935-CADD-4509-9B5A-CBD9C1F1AB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A22A1935-CADD-4509-9B5A-CBD9C1F1AB96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4DE5B4-64FC-4B26-B1F6-A07904AC33F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4DE5B4-64FC-4B26-B1F6-A07904AC33F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4DE5B4-64FC-4B26-B1F6-A07904AC33F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4DE5B4-64FC-4B26-B1F6-A07904AC33F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BF8E3E52-98CA-4223-B505-64A9DDB0FEBB}
+		SolutionGuid = {676CEE7C-D20E-4F11-88F5-1220E0A761B0}
 	EndGlobalSection
 EndGlobal

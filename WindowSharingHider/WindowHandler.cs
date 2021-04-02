@@ -29,7 +29,7 @@ namespace WindowSharingHider
         [DllImport("kernel32")] static extern Boolean VirtualFreeEx(IntPtr hProcess, IntPtr lpAddress, Int32 dwSize, Int32 dwFreeType);
         [DllImport("kernel32")] static extern Boolean IsWow64Process(IntPtr processHandle, out Boolean wow64Process);
         [DllImport("psapi")] static extern bool GetModuleInformation(IntPtr hProcess, IntPtr hModule, out MODULEINFO lpmodinfo, UInt32 cb);
-        [DllImport("psapi")] static extern bool EnumProcessModulesEx(IntPtr hProcess, [MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.U4)][In][Out] IntPtr[] lphModule, UInt32 cb,  out UInt32 lpcbNeeded, UInt32 dwFilterFlag);
+        [DllImport("psapi")] static extern bool EnumProcessModulesEx(IntPtr hProcess, [MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.U4)][In][Out] IntPtr[] lphModule, UInt32 cb, out UInt32 lpcbNeeded, UInt32 dwFilterFlag);
         [DllImport("psapi")] static extern uint GetModuleFileNameEx(IntPtr hProcess, IntPtr hModule, [Out] StringBuilder lpBaseName, UInt32 nSize);
         [StructLayout(LayoutKind.Sequential)]
         public struct MODULEINFO
@@ -64,7 +64,7 @@ namespace WindowSharingHider
         {
             var buffer = new Byte[8];
             ReadProcessMemory(procHandle, (UInt64)addr, buffer, 8, out _);
-            return BitConverter.ToInt32(buffer);
+            return BitConverter.ToInt32(buffer, 0);
         }
         // https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity current process has to own hWnd.. but does it really matter??
         public static void SetWindowDisplayAffinity(IntPtr hWnd, Int32 dwAffinity)
